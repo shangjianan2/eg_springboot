@@ -1,4 +1,4 @@
-package Filter;
+package Filter0;
 
 import org.springframework.core.annotation.Order;
 
@@ -22,6 +22,6 @@ public class MyFilter1 implements Filter {
 
     @Override
     public void destroy() {
-        System.out.println("destory");
+        System.out.println("destory1");
     }
 }
