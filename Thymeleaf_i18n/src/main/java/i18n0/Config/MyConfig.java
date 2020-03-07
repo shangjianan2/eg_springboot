@@ -26,7 +26,7 @@ public class MyConfig implements WebMvcConfigurer {
 
         @Override
         public Locale resolveLocale(HttpServletRequest request) {
-            String language = request.getParameter("language");
+            String language = request.getParameter("language_wjl");
             System.out.println("-----"+language);
             Locale locale = Locale.getDefault();
             if(!StringUtils.isEmpty(language)){
