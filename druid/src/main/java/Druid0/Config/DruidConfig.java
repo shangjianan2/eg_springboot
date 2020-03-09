@@ -16,12 +16,12 @@ import java.util.Map;
 public class DruidConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
-    public DataSource druidDataSource(){
+    public DataSource druidDataSource_wjl(){
         return new DruidDataSource();
     }
 
     @Bean
-    public ServletRegistrationBean druidServletRegistrationBean(){
+    public ServletRegistrationBean druidServletRegistrationBeanadf_wjl(){
         ServletRegistrationBean<Servlet> servletRegistrationBean = new ServletRegistrationBean<>(new StatViewServlet(),"/druid/*");
         Map<String,String> initParams = new HashMap<>();
         initParams.put("loginUsername","admin");
